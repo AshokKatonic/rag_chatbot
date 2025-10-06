@@ -1,0 +1,35 @@
+{
+  "target_urls": [
+    "https://partner.katonic.ai/",
+    "https://partner.katonic.ai/infrastructure/?type=on-prem-normal",
+    "https://partner.katonic.ai/installation/?type=on-prem-normal",
+    "https://partner.katonic.ai/infrastructure/?type=on-prem-multitenancy",
+    "https://partner.katonic.ai/installation/?type=on-prem-multitenancy",
+    "https://partner.katonic.ai/infrastructure/?type=airgap",
+    "https://partner.katonic.ai/installation/?type=airgap",
+    "https://partner.katonic.ai/infrastructure/?type=airgap-multitenancy",
+    "https://partner.katonic.ai/installation/?type=airgap-multitenancy"
+  ],
+  "authentication": {
+    "enabled": true,
+    "login_url": "https://partner.katonic.ai/auth/sign-in",
+    "email_field": "input[name=\"email\"]",
+    "password_field": "input[name=\"password\"]",
+    "submit_button": "button[type=\"submit\"]",
+    "email": "harshit.vyas@katonic.ai",
+    "password": "Katonic@1234"
+  },
+  "scraping": {
+    "wait_for": "networkidle",
+    "timeout": 60000,
+    "remove_scripts": true,
+    "remove_styles": true,
+    "follow_links": false,
+    "max_depth": 1
+  },
+  "output": {
+    "format": "text",
+    "include_metadata": true,
+    "clean_text": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "target_urls": [
+        "https://partner.katonic.ai/dashboard/",
+        "https://partner.katonic.ai/infrastructure/?type=on-prem-normal",
+        "https://partner.katonic.ai/installation/?type=on-prem-normal",
+        "https://partner.katonic.ai/infrastructure/?type=on-prem-multitenancy",
+        "https://partner.katonic.ai/installation/?type=on-prem-multitenancy",
+        "https://partner.katonic.ai/infrastructure/?type=airgap",
+        "https://partner.katonic.ai/installation/?type=airgap",
+        "https://partner.katonic.ai/infrastructure/?type=airgap-multitenancy",
+        "https://partner.katonic.ai/installation/?type=airgap-multitenancy"
+    ],
+    "authentication": {
+        "enabled": true,
+        "login_url": "https://partner.katonic.ai/auth/sign-in",
+        "email_field": "input[type=\"email\"]",
+        "password_field": "input[type=\"password\"]",
+        "continue_button": "button[type=\"submit\"]",
+        "email": "your-email@katonic.ai",
+        "password": "your-password",
+        "two_step_login": true
+    },
+    "scraping": {
+        "wait_for": "networkidle",
+        "timeout": 30000,
+        "remove_scripts": true,
+        "remove_styles": true,
+        "follow_links": false,
+        "max_depth": 1
+    },
+    "output": {
+        "format": "text",
+        "include_metadata": true,
+        "clean_text": true
+    }
+}
+
